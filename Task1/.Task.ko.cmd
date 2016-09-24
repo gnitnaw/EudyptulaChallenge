@@ -1,0 +1,1 @@
+cmd_/home/pi/git/EudyptulaChallenge/Task1/Task.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/pi/git/EudyptulaChallenge/Task1/Task.ko /home/pi/git/EudyptulaChallenge/Task1/Task.o /home/pi/git/EudyptulaChallenge/Task1/Task.mod.o

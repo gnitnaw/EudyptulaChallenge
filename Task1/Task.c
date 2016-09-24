@@ -12,9 +12,9 @@ static int __init hello_init(void)
     return 0;
 }
 
-static int __exit hello_ext(void)
+static void __exit hello_exit(void)
 {
-    return 0;
+    return ;
 }
 
 module_init(hello_init);

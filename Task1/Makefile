@@ -1,9 +1,11 @@
 #MODULE_NAME = Hello
-obj-m       += Task1.o
-KDIR=/home/wtchen/git/mainline/linux
+obj-m       := Task.o
+KVERSION    = $(shell uname -r)
+KDIR=/lib/modules/$(KVERSION)/build
+PWD := $(shell pwd)
 
-all:
-	make -C $(KDIR) M=$(shell pwd) modules
+default:
+	make -C $(KDIR) M=$(PWD) modules
  
 clean:
-	make -C $(KDIR) M=$(shell pwd) clean
+	rm -rf *.o *.cmd *.ko *.mod.c *.tmp_versions *.order *.symvers
