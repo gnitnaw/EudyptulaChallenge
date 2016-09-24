@@ -1,4 +1,4 @@
-#MODULE_NAME = Hello
+MODULE_NAME = Hello
 obj-m       := Task.o
 KVERSION    = $(shell uname -r)
 KDIR=/lib/modules/$(KVERSION)/build
